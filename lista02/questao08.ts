@@ -39,7 +39,7 @@ class Biblioteca{
         return false;
     }
 
-    consultarPorISBN(isbn: string): Livro{
+    consultarPorISBN(isbn: string): Livro | null{
         for (const livro of this.livros) {
             if(livro.isbn === isbn){
                 return livro;
